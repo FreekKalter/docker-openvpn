@@ -209,6 +209,8 @@ status /tmp/openvpn-status.log
 
 user nobody
 group nogroup
+
+log-append /log/openvpn.log
 EOF
 
 [ -n "$OVPN_TLS_CIPHER" ] && echo "tls-cipher $OVPN_TLS_CIPHER" >> "$conf"
